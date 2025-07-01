@@ -1,4 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+header .navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+header .navbar .logo_flex_text {
+  display: flex;
+  flex-direction: column;
+}
+header .navbar .logo_flex_text h1 {
+  font-size: 1.5rem;
+  color: #f25a06;
+  margin-bottom: 3px;
+}
+header .navbar .logo_flex_text p {
+  font-size: 13px;
+  font-weight: 600;
+}
+header .navbar .nav_menu ul {
+  display: flex;
+  gap: 2.5rem;
+}
+header .navbar .nav_menu ul li {
+  list-style: none;
+}
+header .navbar .nav_menu ul a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+header .navbar .nav_button a {
+  text-decoration: none;
+  color: #000;
+}
+header .navbar .nav_button button {
+  padding: 0.5rem 1.5rem;
+  margin-left: 1rem;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px solid #000;
+  font-weight: 600;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +56,7 @@
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
 }
