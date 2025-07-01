@@ -12,6 +12,10 @@ header {
             display: flex;
             align-items: center;
             gap: $rem07;
+            img{
+                padding: 6px;
+                width: 50px;
+            }
         }
 
         .logo_flex_text {
@@ -83,7 +87,8 @@ header {
                 align-items: center;
                 gap: $rem07;
                 img{
-                    width: 50px;
+                    width: 55px;
+                    padding: 5px;
                 }
             }
 
