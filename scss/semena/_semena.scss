@@ -1,0 +1,106 @@
+@use'../variables' as*;
+
+.Semena {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: $rem3;
+
+    .Semena_box {
+        h1 {
+            font-size: $rem4;
+            margin-bottom: $rem1;
+        }
+
+        p {
+            font-size: $rem15;
+            width: 80%;
+            color: #222;
+            margin-top: $rem1;
+            margin-bottom: $rem2;
+
+            span {
+                color: $orange;
+            }
+        }
+
+        button {
+            padding: $rem08 $rem2;
+            font-size: 17px;
+            background-color: $orange;
+            color: #fff;
+            border: 1px solid $orange;
+            border-radius: 30px;
+        }
+
+        .Semena_button {
+            display: flex;
+            align-items: center;
+            gap: $rem1;
+
+            p {
+                font-size: 18px;
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+
+    .Semena {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: $rem3;
+        width: 90%;
+
+        .Semena_box {
+            h1 {
+                font-size: $rem15;
+                margin-bottom: $rem1;
+                margin-top: $rem3;
+            }
+
+            p {
+                font-size: $rem1;
+                width: 90%;
+                color: #222;
+                margin-top: $rem1;
+                margin-bottom: $rem2;
+
+                span {
+                    color: $orange;
+                }
+            }
+
+            button {
+                padding: $rem08 $rem2;
+                font-size: 17px;
+                background-color: $orange;
+                color: #fff;
+                border: 1px solid $orange;
+                border-radius: 20px;
+                width: 90%;
+
+            }
+
+            .Semena_button {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: $rem1;
+
+                p {
+                    font-size: 16px;
+                    width: 100%;
+                    margin-top: 2px;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
