@@ -47,7 +47,70 @@ header .navbar .nav_button button {
   border: 2px solid #000;
   font-weight: 600;
 }
+header .navbar i {
+  display: none;
+}
 
+@media screen and (max-width: 600px) {
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    width: 95%;
+  }
+  header .navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  header .navbar .logo img {
+    width: 50px;
+  }
+  header .navbar .logo_flex_text {
+    display: flex;
+    flex-direction: column;
+  }
+  header .navbar .logo_flex_text h1 {
+    font-size: 1.1;
+    color: #f25a06;
+    margin-bottom: 3px;
+  }
+  header .navbar .logo_flex_text p {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  header .navbar .nav_menu ul {
+    display: none;
+  }
+  header .navbar .nav_menu ul li {
+    list-style: none;
+  }
+  header .navbar .nav_menu ul a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+  header .navbar .nav_button {
+    display: none;
+  }
+  header .navbar .nav_button a {
+    text-decoration: none;
+    color: #000;
+  }
+  header .navbar .nav_button button {
+    padding: 0.5rem 1.5rem;
+    margin-left: 1rem;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid #000;
+    font-weight: 600;
+  }
+  header .navbar i {
+    display: block;
+    font-size: 2rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;

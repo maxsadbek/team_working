@@ -1,46 +1,130 @@
 @use'../variables' as*;
-header{
-    .navbar{
+
+header {
+    .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: $rem2 0;
-        .logo{
+
+        .logo {
             display: flex;
             align-items: center;
             gap: $rem07;
         }
-        .logo_flex_text{
+
+        .logo_flex_text {
             display: flex;
             flex-direction: column;
-            h1{
+
+            h1 {
                 font-size: $rem15;
                 color: $orange;
                 margin-bottom: 3px;
             }
-            p{
+
+            p {
                 font-size: 13px;
                 font-weight: 600;
             }
+        }
+
+        .nav_menu ul {
+            display: flex;
+            gap: $rem25;
+
+            li {
+                list-style: none;
             }
-            .nav_menu ul{
+
+            a {
+                text-decoration: none;
+                color: $black;
+                font-weight: 500;
+            }
+        }
+
+        .nav_button {
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+
+            button {
+                padding: $rem05 $rem15;
+                margin-left: $rem1;
+                background-color: transparent;
+                border-radius: 30px;
+                border: 2px solid $black;
+                font-weight: 600;
+            }
+        }
+
+        i {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    header {
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: $rem2 0;
+            width: 95%;
+
+            .logo {
                 display: flex;
-                gap: $rem25;
-                li{
+                align-items: center;
+                gap: $rem07;
+                img{
+                    width: 50px;
+                }
+            }
+
+            .logo_flex_text {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    font-size: 1.1;
+                    color: $orange;
+                    margin-bottom: 3px;
+                }
+
+                p {
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+
+            .nav_menu ul {
+                display: none;
+
+                li {
                     list-style: none;
                 }
-                a{
+
+                a {
                     text-decoration: none;
                     color: $black;
                     font-weight: 500;
                 }
             }
-            .nav_button{
-                a{
+
+            .nav_button {
+                display: none;
+
+                a {
                     text-decoration: none;
                     color: $black;
                 }
-                button{
+
+                button {
                     padding: $rem05 $rem15;
                     margin-left: $rem1;
                     background-color: transparent;
@@ -49,5 +133,12 @@ header{
                     font-weight: 600;
                 }
             }
+
+            i {
+                display: block;
+                font-size: $rem2;
+            }
+        }
+
     }
 }
