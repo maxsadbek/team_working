@@ -1,0 +1,68 @@
+@use'../variables' as*;
+
+.card_parent {
+    margin-top: $rem3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card_box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    .card {
+        width: 220px;
+        padding: $rem1;
+        transition: all 0.5s ease;
+
+        h2 {
+            color: #222;
+            margin-bottom: $rem05;
+        }
+    }
+            .lcard_top{
+            margin-top: -35px;
+        }
+}
+
+@media screen and (max-width:600px) {
+
+
+    .card_parent {
+        margin-top: $rem3;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+
+        .card_box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0rem;
+            text-align: center;
+
+            p{
+                font-size: 14px;
+            }
+        }
+
+        .card {
+            width: 220px;
+            padding: $rem1;
+            transition: all 0.5s ease;
+
+            h2 {
+                color: #222;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        .lcard_top{
+            margin-top: -20px;
+        }
+    }
+}

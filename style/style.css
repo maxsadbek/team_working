@@ -216,5 +216,62 @@ header .navbar i {
     width: 100%;
   }
 }
+.card_parent {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card_parent .card_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.card_parent .card {
+  width: 220px;
+  padding: 1rem;
+  transition: all 0.5s ease;
+}
+.card_parent .card h2 {
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+.card_parent .lcard_top {
+  margin-top: -35px;
+}
+
+@media screen and (max-width: 600px) {
+  .card_parent {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+  }
+  .card_parent .card_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0rem;
+    text-align: center;
+  }
+  .card_parent .card_box p {
+    font-size: 14px;
+  }
+  .card_parent .card {
+    width: 220px;
+    padding: 1rem;
+    transition: all 0.5s ease;
+  }
+  .card_parent .card h2 {
+    color: #222;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .card_parent .lcard_top {
+    margin-top: -20px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
