@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "team_working",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass scss/style.scss:style/style.css",
+    "sass:watch":"sass --watch scss/style.scss:style/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxsadbek/team_working.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxsadbek/team_working/issues"
+  },
+  "homepage": "https://github.com/maxsadbek/team_working#readme"
+}
